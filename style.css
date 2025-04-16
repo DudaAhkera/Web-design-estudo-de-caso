@@ -366,17 +366,26 @@ nav a:hover {
     padding: 40px 20px;
     color: rgb(0, 101, 171);
 }
+
+.contato-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
   
 .contato-titulo {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 28px;
     margin-bottom: 30px;
     color: rgb(0, 101, 171);
 }
   
 .contato-container {
-    max-width: 800px;
+    min-width: 300px;
     margin: 0 auto;
+    flex: 1;
 }
   
 .contato-infos {
@@ -400,6 +409,33 @@ nav a:hover {
     font-size: 16px;
     margin-bottom: 15px;
     color: rgb(0, 101, 171);
+}
+
+.contato-imagem {
+    flex-shrink: 0;
+}
+
+.contato-imagem img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.icone-whatsapp img {
+    transition: transform 0.3s;
+}
+  
+.icone-whatsapp:hover img {
+    transform: scale(1.1);
+}
+
+.frase-whats a {
+    transition: transform 0.3s;
+    transform: scale(1.1);
+    text-decoration: none;
+    color: rgb(29,178,102);
+
 }
 
 /*RODAPÉ*/
@@ -515,6 +551,24 @@ nav a:hover {
     .galeria-imagens img {
         width: 90%;
         max-width: 350px;
+    }
+    /*contato*/
+
+    .contato-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato-imagem {
+        width: 100%;
+        text-align: center; /* Centraliza a imagem horizontalmente */
+        margin-top: 20px;
+    }
+    
+    .contato-imagem img {
+        max-width: 80%;
+        height: auto;
+        display: inline-block;
     }
       
 }
